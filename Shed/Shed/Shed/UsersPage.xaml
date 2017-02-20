@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shed.UsersPage"
+             Title="Shed - Manage Users"
+             BackgroundImage="wood.png">
+      <ContentPage.Content>
+    <StackLayout  Orientation="Vertical" >
+      <StackLayout Orientation="Vertical" BackgroundColor="#9970c2" >
+        <StackLayout  Orientation="Horizontal" Padding="5,0,0,0">
+          <Button x:Name="BtnUsersSort" Text="Menu " Clicked="OnBtnUsersSortClick" TextColor="#FFFFFF" BackgroundColor="#9970c2" Font="Bold,20" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+        <StackLayout  Orientation="Vertical" >
+          <Button x:Name="BtnApproveUser" Text="Approve Users" TextColor="#FFFFFF"  Clicked="OnBtnApproveUSersClick" BackgroundColor="#9970c2" Font="Bold,15" VerticalOptions="FillAndExpand"/>
+          <Button x:Name="BtnAddUser" Text="Add User" Clicked="OnBtnAddUserClick" TextColor="#FFFFFF" BackgroundColor="#9970c2" Font="Bold,15" VerticalOptions="FillAndExpand"/>
+          <Button x:Name="BtnUsersSortAlpha" Text="Sort A-Z" Clicked="OnBtnUsersSortAlphaClick" TextColor="#FFFFFF"  BackgroundColor="#9970c2"  Font="Bold,15" VerticalOptions="FillAndExpand" />
+          <Button x:Name="BtnUsersSortAssigned" Text="Sort by Unassigned" Clicked="OnBtnUsersSortAssignedCLick" TextColor="#FFFFFF" BackgroundColor="#9970c2" Font="Bold,15" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+      </StackLayout>
+      <ListView x:Name="EmployeeView" SeparatorVisibility="Default" SeparatorColor="#00bfff" RowHeight="120">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+               <StackLayout  Orientation="Vertical" BackgroundColor="#ffffff" >
+                <StackLayout  Orientation="Horizontal" Padding="5,0,0,0" >
+                  <Label Text="{Binding User_Name}"  TextColor="#808080" Font="20" />  
+                  <Label Text="{Binding User_Surname}"  TextColor="#808080" Font="20" />
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" Padding="5,0,0,0">        
+                  <Label Text="{Binding User_Assigned}" TextColor="#4da6ff" Font="20" />
+                </StackLayout>
+                <StackLayout  Orientation="Vertical" Padding="5,0,0,0">
+                  <Label Text="{Binding Emp_ID}"  TextColor="#808080" Font="12"/>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal">
+                  <Button x:Name="BtnShow" Clicked="OnBtnShowEmployee" Text="View Employee Details"  TextColor="#FFFFFF"  BackgroundColor="#9970c2" Font="Bold,15" CommandParameter="{Binding Emp_ID}" />
+                </StackLayout>
+               </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

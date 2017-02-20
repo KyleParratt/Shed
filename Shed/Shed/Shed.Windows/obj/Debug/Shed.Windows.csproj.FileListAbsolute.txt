@@ -1,0 +1,11 @@
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\Shed.Windows.csprojResolveAssemblyReference.cache
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\App.g.i.cs
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\App.g.cs
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\MainPage.g.i.cs
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\MainPage.g.cs
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\XamlTypeInfo.g.cs
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\App.xaml
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\MainPage.xaml
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\App.xbf
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\MainPage.xbf
+c:\users\kyle\documents\visual studio 2015\Projects\Shed\Shed\Shed.Windows\obj\Debug\XamlSaveStateFile.xml
