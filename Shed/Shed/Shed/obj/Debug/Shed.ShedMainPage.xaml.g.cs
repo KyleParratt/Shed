@@ -20,10 +20,22 @@ namespace Shed {
         private global::Xamarin.Forms.Button BtnMenu;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button BtnUers;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button BtnJobs;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button BtnUers;
+        private global::Xamarin.Forms.Button BtnRefresh;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label InputLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry IdEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button BtnAssignJob;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.ListView JobView;
@@ -32,8 +44,12 @@ namespace Shed {
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(ShedMainPage));
             BtnMenu = this.FindByName<global::Xamarin.Forms.Button>("BtnMenu");
-            BtnJobs = this.FindByName<global::Xamarin.Forms.Button>("BtnJobs");
             BtnUers = this.FindByName<global::Xamarin.Forms.Button>("BtnUers");
+            BtnJobs = this.FindByName<global::Xamarin.Forms.Button>("BtnJobs");
+            BtnRefresh = this.FindByName<global::Xamarin.Forms.Button>("BtnRefresh");
+            InputLabel = this.FindByName<global::Xamarin.Forms.Label>("InputLabel");
+            IdEntry = this.FindByName<global::Xamarin.Forms.Entry>("IdEntry");
+            BtnAssignJob = this.FindByName<global::Xamarin.Forms.Button>("BtnAssignJob");
             JobView = this.FindByName<global::Xamarin.Forms.ListView>("JobView");
         }
     }

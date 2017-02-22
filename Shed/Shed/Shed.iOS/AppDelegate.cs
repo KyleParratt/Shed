@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 using Foundation;
 using UIKit;
-
+using Shed;
 namespace Shed.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -23,9 +22,14 @@ namespace Shed.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new Shed());
+            LoadApplication(new ShedMainPage());
 
             return base.FinishedLaunching(app, options);
+        }
+
+        private void LoadApplication(ShedMainPage shedMainPage)
+        {
+            throw new NotImplementedException();
         }
     }
 }

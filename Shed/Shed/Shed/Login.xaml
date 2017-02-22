@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shed.Login"
+             Title="Shed - Login"
+             BackgroundImage="wood.png">
+  <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="7,5,7,10" >
+    <StackLayout Orientation="Vertical"   BackgroundColor="#FFFFFF" >
+    <Label Text="Enter Employee ID"  Font="20" TextColor="#4da6ff" Margin="5, 10, 0, 0"/>
+    <Entry x:Name="userentry" Placeholder="Employee ID:" TextColor="#808080" Text=""/>
+
+    <Label Text="Enter Password"  Font="20" TextColor="#808080"  Margin="5, 0, 0, 0"/>
+    <Entry x:Name="Passentry" Placeholder="Password:" TextColor="#808080" Text="" IsPassword="true"/>
+    
+    <Button x:Name="BtnLogin" Font="Bold,20" Clicked="OnBtnLogin" HorizontalOptions="CenterAndExpand" BackgroundColor="#9970c2" Text="Login" TextColor="#FFFFFF" CommandParameter="{Binding Source={x:Reference userentry},Path=Text}"/>
+  </StackLayout>
+  </StackLayout>
+    </ContentPage>

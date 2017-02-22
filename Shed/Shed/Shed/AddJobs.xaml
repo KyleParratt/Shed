@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shed.AddJobs"
+             Title="Shed - Add Jobs"
+             BackgroundImage="wood.png"> 
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="7,5,7,10">   
+     <ScrollView  Orientation="Vertical" >
+      <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand"  BackgroundColor="#FFFFFF" >
+
+        <Label Text="Enter Job Title"  Font="20" TextColor="#4da6ff" Margin="5, 10, 0, 0"/>
+        <Entry x:Name="titleEntry" Placeholder="Title:" TextColor="#808080" Text=""/>
+
+        <Label Text="Enter Job Description"  Font="20" TextColor="#808080"  Margin="5, 0, 0, 0"/>
+        <Editor x:Name="DescrEntry" TextColor="#808080" Text="Description:"/>
+
+        <Label Text="Assigned Employee ID (Optional)"  Font="20" TextColor="#808080"  Margin="5, 0, 0, 0"/>
+        <Entry x:Name="IDEntry" Placeholder="Employee ID:" TextColor="#808080" Text=""/>
+
+        <Label Text="Select Deadline Date" Font="20" TextColor="#808080"  Margin="5, 0, 0, 0"/>
+        <DatePicker x:Name="EndDate" TextColor="#808080" />
+
+        <Button x:Name="BtnOpenJob" Font="Bold,20" Clicked="OnBtnOpenJob" HorizontalOptions="CenterAndExpand" BackgroundColor="#9970c2" Text="Open Job" TextColor="#FFFFFF"/>
+      </StackLayout>
+    </ScrollView>
+    </StackLayout>
+</ContentPage>

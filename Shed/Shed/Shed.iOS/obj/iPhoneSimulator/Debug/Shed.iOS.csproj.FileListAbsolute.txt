@@ -1,0 +1,5 @@
+C:\Repos\Shed\Shed\Shed\Shed.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Repos\Shed\Shed\Shed\Shed.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Repos\Shed\Shed\Shed\Shed.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Repos\Shed\Shed\Shed\Shed.iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Repos\Shed\Shed\Shed\Shed.iOS\obj\iPhoneSimulator\Debug\Shed.iOS.csprojResolveAssemblyReference.cache

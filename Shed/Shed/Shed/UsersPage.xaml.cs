@@ -15,7 +15,7 @@ namespace Shed
             HideSort();
             var realm = Realm.GetInstance();
             var z = new List<Users>();
-            var UserCountList = realm.All<UsersDB>().Where(d => d.Approved == true);
+            var UserCountList = realm.All<UsersDB>().Where(d => d.Approved == true && d.Role == "Operator");
             for (var i = 0; i < UserCountList.Count(); i++)
             {
                 var UserList = UserCountList.ElementAt(i);

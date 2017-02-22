@@ -4,6 +4,7 @@
              x:Class="Shed.RegisterUser"
              Title="Shed - Register User"
              BackgroundImage="wood.png">
+  
   <ContentPage.Resources>
     <ResourceDictionary>
       <Style x:Key="buttonStyle" TargetType="Button">
@@ -16,42 +17,44 @@
     </ResourceDictionary>
   </ContentPage.Resources>
   <ContentPage.Content>
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand"  Padding="7,5,7,10">   
     <ScrollView  Orientation="Vertical" >
-      <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand"  BackgroundColor="#9970c2" Padding="25,5,25,20">
+      <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand"   BackgroundColor="#FFFFFF">
 
-        <Label Text="Enter Email"  Font="20" TextColor="#FFFFFF" Margin="5, 10, 0, 0"/>
-        <Entry x:Name="EmailEntry" Placeholder="Email:" TextColor="#FFFFFF" Text=""/>
+        <Label Text="Enter Email"  Font="20" TextColor="#808080" Margin="5, 10, 0, 0"/>
+        <Entry x:Name="EmailEntry" Placeholder="Email:" TextColor="#808080" Text=""/>
 
-        <Label Text="Enter Name"  Font="20" TextColor="#FFFFFF"  Margin="5, 0, 0, 0"/>
-        <Entry x:Name="NameEntry" Placeholder="Name:" TextColor="#FFFFFF" Text=""/>
+        <Label Text="Enter Name"  Font="20" TextColor="#808080"  Margin="5, 0, 0, 0"/>
+        <Entry x:Name="NameEntry" Placeholder="Name:" TextColor="#808080" Text=""/>
 
-        <Label Text="Enter Surname"  Font="20" TextColor="#FFFFFF"  Margin="5, 0, 0, 0"/>
-        <Entry x:Name="SurnameEntry" Placeholder="Surname:" TextColor="#FFFFFF" Text=""/>
+        <Label Text="Enter Surname"  Font="20" TextColor="#808080"  Margin="5, 0, 0, 0"/>
+        <Entry x:Name="SurnameEntry" Placeholder="Surname:" TextColor="#808080" Text=""/>
 
-        <Label Text="Enter Password" Font="20" TextColor="#FFFFFF"  Margin="5, 0, 0, 0"/>
-        <Entry x:Name="PasswordEntry" Placeholder="Password:" TextColor="#FFFFFF" IsPassword="true" Text=""/>
+        <Label Text="Enter Password" Font="20" TextColor="#808080"  Margin="5, 0, 0, 0"/>
+        <Entry x:Name="PasswordEntry" Placeholder="Password:" TextColor="#808080" IsPassword="true" Text=""/>
 
-        <Label Text="ReEnter Password" Font="20" TextColor="#FFFFFF"  Margin="5, 0, 0, 0"/>
-        <Entry x:Name="RePasswpordEntry" Placeholder="Password:" TextColor="#FFFFFF" IsPassword="true" Text=""/>
+        <Label Text="ReEnter Password" Font="20" TextColor="#808080"  Margin="5, 0, 0, 0"/>
+        <Entry x:Name="RePasswpordEntry" Placeholder="Password:" TextColor="#808080" IsPassword="true" Text=""/>
 
-        <Label Text="Select Role " Font="20" TextColor="#FFFFFF"  Margin="5, 0, 0, 0"/>
+        <Label Text="Select Role " Font="20" TextColor="#808080"  Margin="5, 0, 0, 0"/>
         
         <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
           <Switch x:Name="CbAdmin" Toggled="CbAdminToggle" />
-          <Label Text="Admin"  Font="15" TextColor="#FFFFFF"  Margin="10, 0, 0, 0"/>
+          <Label Text="Admin"  Font="15" TextColor="#808080"  Margin="10, 0, 0, 0"/>
         </StackLayout>
                 <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
                   <Switch x:Name="CbSupervisor" Toggled="CbSupervisorToggle"/>
-          <Label Text="Supervisor"  Font="15" TextColor="#FFFFFF"  Margin="10, 0, 0, 0"/>
+          <Label Text="Supervisor"  Font="15" TextColor="#808080"  Margin="10, 0, 0, 0"/>
         </StackLayout>
                 <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
                   <Switch x:Name="CbOperator" Toggled="CbOperatorToggle"/>
-          <Label Text="Operator"  Font="15" TextColor="#FFFFFF"  Margin="10, 0, 0, 0"/>
+          <Label Text="Operator"  Font="15" TextColor="#808080"  Margin="10, 0, 0, 0"/>
         </StackLayout>
 
 
         <Button x:Name="BtnRegisterUser" Font="Bold,20" Clicked="OnBtnRegisterUserClick" HorizontalOptions="CenterAndExpand" BackgroundColor="#9970c2" Text="Register User" TextColor="#FFFFFF"/>
       </StackLayout>
     </ScrollView>
+    </StackLayout>
     </ContentPage.Content>
 </ContentPage>

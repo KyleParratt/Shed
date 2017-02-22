@@ -17,7 +17,8 @@
           <Button x:Name="BtnUsersSortAssigned" Text="Sort by Unassigned" Clicked="OnBtnUsersSortAssignedCLick" TextColor="#FFFFFF" BackgroundColor="#9970c2" Font="Bold,15" VerticalOptions="FillAndExpand" />
         </StackLayout>
       </StackLayout>
-      <ListView x:Name="EmployeeView" SeparatorVisibility="Default" SeparatorColor="#00bfff" RowHeight="120">
+      <StackLayout  Orientation="Vertical" Padding="7,0,7,15" >
+      <ListView x:Name="EmployeeView" SeparatorVisibility="Default"  RowHeight="120">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -40,7 +41,7 @@
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
-
+      </StackLayout>
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

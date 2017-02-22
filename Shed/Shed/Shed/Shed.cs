@@ -11,7 +11,7 @@ namespace Shed
     {
         public App()
         {   //Initializes App And Opens Up The Main Page
-            MainPage = new NavigationPage(new ShedMainPage());
+            MainPage = new NavigationPage(new Login());
         }
     }
 }

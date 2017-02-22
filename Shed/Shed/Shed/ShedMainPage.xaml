@@ -4,46 +4,47 @@
              x:Class="Shed.ShedMainPage"
              Title="Shed - Home"
               BackgroundImage="wood.png" >
-  
   <ContentPage.Content>
-
-  
     <StackLayout  Orientation="Vertical"  >
       <StackLayout  Orientation="Vertical" BackgroundColor="#9970c2"  >
         <StackLayout  Orientation="Horizontal"  Padding="5,0,0,0" BackgroundColor="#9970c2" >
           <Button x:Name="BtnMenu" Text="Menu ►" Font="Bold,20" TextColor="#FFFFFF" Clicked="OnBtnMenuClick"  BackgroundColor="#9970c2" />
         </StackLayout>
-      
         <StackLayout  Orientation="Vertical" BackgroundColor="#9970c2"  >
-          <Button x:Name="BtnJobs" Text="Manage Jobs" Clicked="OnBtnJobsClick" TextColor="#FFFFFF" HorizontalOptions="Center"  BackgroundColor="#9970c2" Font="Bold,15" VerticalOptions="FillAndExpand" />
           <Button x:Name="BtnUers" Text="Manage Users" Clicked="OnBtnUsersClick" HorizontalOptions="Center"  TextColor="#FFFFFF" BackgroundColor="#9970c2" Font="Bold,15" VerticalOptions="FillAndExpand"  />
+          <Button x:Name="BtnJobs" Text="Add Job" Clicked="OnBtnJobsClick" TextColor="#FFFFFF" HorizontalOptions="Center"  BackgroundColor="#9970c2" Font="Bold,15" VerticalOptions="FillAndExpand" />
+          <Button x:Name="BtnRefresh" Text="Refresh" Clicked="OnBtnRefresh" HorizontalOptions="Center"  TextColor="#FFFFFF" BackgroundColor="#9970c2" Font="Bold,15" VerticalOptions="FillAndExpand"  />
+          
+          <Label x:Name="InputLabel" Text="Assign Job:"  Font="20" TextColor="#FFFFFF" Margin="5, 10, 0, 0"/>
+          <Entry x:Name="IdEntry" Placeholder="Employee ID:"  BackgroundColor="#FFFFFF" TextColor="#808080" Text=""/>
+          <Button x:Name="BtnAssignJob" Text="Assign" Clicked="OnBtnAssignJob" HorizontalOptions="Center"  TextColor="#FFFFFF" BackgroundColor="#9970c2" Font="Bold,15" VerticalOptions="FillAndExpand"  />
+          
         </StackLayout>
       </StackLayout>
-      <StackLayout  Orientation="Vertical" Padding="25,5,25,20" >
-      <ListView x:Name="JobView" SeparatorVisibility="Default" SeparatorColor="#00bfff" RowHeight="125">
+      <StackLayout  Orientation="Vertical" Padding="7,0,7,15" >
+      <ListView x:Name="JobView" SeparatorVisibility="Default" RowHeight="140" >
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
-              <StackLayout  Orientation="Vertical" BackgroundColor="#ffffff" >
-                <StackLayout  Orientation="Horizontal" Spacing="7" Padding="5,0,0,0" >
-                  <Label Text="{Binding Job_Title}" TextColor="#808080" Font="20"  VerticalOptions="CenterAndExpand"/>
+                <StackLayout  Orientation="Vertical" BackgroundColor="#ffffff"  >
+                  <StackLayout  Orientation="Horizontal" Spacing="7" Padding="5,0,0,0" >
+                    <Label Text="{Binding Job_Title}" TextColor="#808080" Font="20"  VerticalOptions="CenterAndExpand"/>
+                  </StackLayout>
+                  <StackLayout  Orientation="Horizontal" Padding="5,0,0,0" >
+                    <Label Text="{Binding Job_Status}" TextColor="#0680f9" Font="20" />
+                  </StackLayout>
+                  <StackLayout  Orientation="Horizontal" Spacing="10"  Padding="5,0,0,0">
+                    <Label Text="{Binding Job_Descr}" TextColor="#808080"  Font="12" />
+                  </StackLayout>
+                  <StackLayout  Orientation="Horizontal" Spacing="10"  Padding="5,0,0,0">
+                    <Label Text="{Binding Job_Num}" TextColor="#808080"  Font="12" />
+                  </StackLayout>
+                  <StackLayout  Orientation="Horizontal" Spacing="10">
+                    <Button x:Name="BtnViewJob" Clicked="OnBtnViewJob" Text="View Job" TextColor="#FFFFFF"  BackgroundColor="#9970c2" Font="Bold,15" BorderRadius = "15" BorderWidth = "12" CommandParameter="{Binding Job_Num}"/>
+                  </StackLayout>
                 </StackLayout>
-                <StackLayout  Orientation="Horizontal" Padding="5,0,0,0" >
-                  <Label Text="{Binding Job_Status}" TextColor="#0680f9" Font="20" />
-                </StackLayout>
-                <StackLayout  Orientation="Horizontal" Spacing="10"  Padding="5,0,0,0">
-                  <Label Text="{Binding Job_Description}" TextColor="#808080"  Font="12" />
-                </StackLayout>
-                <StackLayout  Orientation="Horizontal" Spacing="10">
-                  <Button Text="View Job" TextColor="#FFFFFF"  BackgroundColor="#9970c2" Font="Bold,15" BorderRadius = "15" BorderWidth = "12"/>
-                </StackLayout>
-
-              </StackLayout>
-
             </ViewCell>
           </DataTemplate>
-
-
         </ListView.ItemTemplate>
       </ListView>
       </StackLayout>
